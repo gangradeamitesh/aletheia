@@ -117,17 +117,6 @@ Aletheia is early-stage and intentionally focused.
 - LLM orchestration is available through Python modules and local experimentation scripts.
 - Prompting is optimized for backend correctness and deterministic tests, but generated code still benefits from human review.
 
-## Roadmap
-
-Natural next steps for the project:
-
-- End-to-end CLI for plan, generate, run, and repair
-- Broader framework support such as FastAPI and Django
-- Better fixture discovery and test file placement
-- Smarter dependency resolution across modules
-- Coverage-aware route prioritization
-- Richer reports for route findings and generated scenarios
-
 ## Project Structure
 
 ```text
@@ -158,9 +147,3 @@ The repository currently does not include packaging metadata or a pinned depende
 - `openai`
 
 If you plan to use a non-default OpenAI-compatible endpoint, `LLMClient` supports a configurable `base_url`.
-
-## Status
-
-Aletheia is a strong foundation for a code-aware backend test generation system: the indexing, planning, prompting, and execution pieces are already separated in a way that makes the project credible, extensible, and worth iterating on.
-
-If you are building AI tooling for backend quality, this is the kind of infrastructure layer that can compound quickly.
